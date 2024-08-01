@@ -1,0 +1,148 @@
+<!-- Employee Registration Page -->
+ <html>
+    <head>
+    <title>EMPLOYEE REGISTRATION</title>
+   <style>
+    /* Global Styles */
+    body {    
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Form Styles */
+    #employee-registration-form {
+      width: 80%;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    #employee-registration-form h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #employee-registration-form h2 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    #employee-registration-form label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #employee-registration-form input[type="text"],
+    #employee-registration-form input[type="email"],
+    #employee-registration-form input[type="tel"],
+    #employee-registration-form input[type="date"],
+    #employee-registration-form select {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #employee-registration-form button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      background-color: #564caf;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #employee-registration-form button[type="submit"]:hover {
+      background-color: #c20021;
+    }
+  </style>
+    
+        </head>
+
+
+    <body>
+
+<h1>Employee Registration</h1>
+
+<form id="employee-registration-form">
+  <!-- Personal Details -->
+  <h2>Personal Details</h2>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+  </div>
+  <div>
+    <label for="date-of-birth">Date of Birth:</label>
+    <input type="date" id="date-of-birth" name="date-of-birth" required>
+  </div>
+
+  <!-- Professional Details -->
+  <h2>Professional Details</h2>
+  <div>
+    <label for="designation">Designation:</label>
+    <select id="designation" name="designation" required>
+      <option value="">Select Designation</option>
+      <option value="Manager">Manager</option>
+      <option value="Team Lead">Team Lead</option>
+      <option value="Software Engineer">Software Engineer</option>
+      <option value="QA Engineer">QA Engineer</option>
+      <option value="teacher">teacher</option>
+    </select>
+  </div>
+  <div>
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+      <option value="">Select Department</option>
+      <option value="IT">IT</option>
+      <option value="Marketing">Marketing</option>
+      <option value="Sales">Sales</option>
+      <option value="HR">HR</option>
+    </select>
+  </div>
+  <div>
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" required>
+  </div>
+
+  <!-- Address -->
+  <h2>Address</h2>
+  <div>
+    <label for="address-line-1">Address Line 1:</label>
+    <input type="text" id="address-line-1" name="address-line-1" required>
+  </div>
+  <div>
+    <label for="address-line-2">Address Line 2:</label>
+    <input type="text" id="address-line-2" name="address-line-2">
+  </div>
+  <div>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+  </div>
+  <div>
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required>
+  </div>
+  <div>
+    <label for="zip">Zip:</label>
+    <input type="text" id="zip" name="zip" required>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit">Register Employee</button>
+</form>
+</body>
